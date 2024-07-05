@@ -9,8 +9,8 @@ terraform {
 }
 
 provider "aws" {
-  profile = "cloud_user"
-  region  = "us-east-1"
+  profile = "your-aws-profile"
+  region  = "your-aws-region"
 }
 
 # EC2 Instance
@@ -34,5 +34,5 @@ resource "aws_instance" "ec2" {
 
 # S3 BUCKET
 resource "aws_s3_bucket" "s3" {
-  bucket = "sivu-spaceone"
+  bucket = "your-s3-bucket-name"
 }
